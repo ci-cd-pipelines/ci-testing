@@ -61,7 +61,6 @@ jobs:
         
           # Auto-merge the pull request
           gh pr merge $PR_NUMBER --merge --body "[ci skip]"
-          # git push origin --delete ${branch_name}
         
              
 
