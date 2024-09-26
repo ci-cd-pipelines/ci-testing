@@ -54,7 +54,7 @@ jobs:
           git push origin HEAD:${branch_name}
         
           # Create a pull request using GitHub CLI
-          gh pr create --title "Update image digest" --body "This PR updates the Docker image digest." --head ${branch_name} --base main
+          gh pr create --title "Update image digest" --body "This PR updates the Docker image digest." --head ${branch_name} --base master
           
           # Fetch the PR number for auto-merge
           PR_NUMBER=$(gh pr list --state open --head ${branch_name} --json number --jq '.[0].number')
