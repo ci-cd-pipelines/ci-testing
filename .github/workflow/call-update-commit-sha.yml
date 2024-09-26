@@ -3,7 +3,7 @@ name: Call Update commit_sha.txt
 on:
   push:
     branches:
-      - main
+      - master
   pull_request:
     branches:
       - '*'
